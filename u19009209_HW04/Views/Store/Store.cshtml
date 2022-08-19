@@ -1,0 +1,51 @@
+﻿@model IEnumerable<u19009209_HW04.Models.Clothes>
+
+@{
+    ViewBag.Title = "Store";
+}
+
+<h2>Store</h2>
+
+<div>
+    <a href="AddShirtToStore" class="btn btn-success btn-lg"> Add Shirt </a>
+    <a href="AddPantsToStore" class="btn btn-success btn-lg"> Add Pants </a>
+    <a href="AddShoeToStore" class="btn btn-success btn-lg"> Add Shoes </a>
+    <br />
+    <br />
+</div>
+<table class="table">
+    <tr>
+        <th>
+            Decription
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Size)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.ItemDescription()
+            </td>
+            <th>
+                R @Html.DisplayFor(modelItem => item.Price)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Size)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+}
+<br />
+<a href="https://www.globalgiving.org/" class="btn btn-success btn-lg">Global Giving</a>
+<h4>Help the unfortunate! </h4>
+<div id="jumbotron" class="well-sm" style="height: 1500px; ">
+    <div class="row">
+        <div class="col-md-6">
+           <h4><b>Use case narrative 1:</b></h4>
+            <img src="@Url.Content("~/Images/Narritive 1.JPG")" width="550" />
+        </div>
+        <div class="col-md-6">
+            <h4><b>Use case narrative 2:</b></h4>
+            <img src="@Url.Content("~/Images/Narritive 2.JPG")" width="550" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h4><b>Use case narrative 3:</b></h4>
+            <img src="@Url.Content("~/Images/Narritive 3.JPG")" width="550" />
+        </div>
+        <div class="col-md-6">
+            <h4><b>Use case narrative 4:</b></h4>
+            <img src="@Url.Content("~/Images/Narritive 4.JPG")" width="550" />
+        </div>
+    </div>
+    <div>
+        <h4 style="text-align: center"><b>Class structure diagram:</b></h4>
+        <img src="@Url.Content("~/Images/Class.JPG")" width="550" class="center"/>
+    </div>
+</div>
+<style>
+    #jumbotron {
+        background-color: slategrey;
+    }
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+</style>
